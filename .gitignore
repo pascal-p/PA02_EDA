@@ -1,0 +1,7 @@
+.Rhistory
+  
+*.zip
+*.csv
+*.rds
+plot[0-9]*
+*.html
