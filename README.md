@@ -1,8 +1,17 @@
-# Exploratory_Analysis_Week4_Project2
+---
+title: "Exploratory Analysis Week4 - Project2"
+date: "July, 2018"
+author: Pascal P
+output:
+  html_document:
+    toc: true
+    number_sections: true
+    df_print: paged
+    highlight: zenburn
+    theme: simplex
+---
 
-  July 2018, Pascal
-
-## Details
+# Details
   Can be found at [Coursera - Exploratory Data Analysis](https://www.coursera.org/learn/exploratory-data-analysis/peer/b5Ecl/course-project-2)
   
   The introduction is repeated here for convenience:
@@ -11,7 +20,7 @@
 
   *For each year and for each type of PM source, the NEI records how many tons of PM2.5 were emitted from that source over the course of the entire year. The data that you will use for this assignment are for 1999, 2002, 2005, and 2008.*
   
-## Goal of assigment
+# Goal of assigment
   Explore the National Emissions Inventory database and see what it says about fine particulate matter pollution in the United states over the 10-year period 1999–2008.
   
   Specifically, the following questions and tasks must be addressed in the exploratory analysis providing plot as evidences.
@@ -33,13 +42,21 @@
   6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037").  
   Which city has seen greater changes over time in motor vehicle emissions?
   
-## Work done
-  - A script `all_plots.R` which build the 6 required plots, it uses `dplyr` and `ggplot2` `R`-packages. It also contains some comments on what was done.   
+# Work done
+  - A main script `all_plots.R` which build the 6 required plots, by sourcing the 6 `qr[1-6].R`, it uses `dplyr` and `ggplot2` `R`-packages.  
+  It also contains some comments on what was done.   
   This script assumes the data is available in the same directory this script is located.  
   Data downloadable [here](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip).   
   Organisation  
 ```
 all_plots.R
+qr1.R
+qr2.R
+qr3.R
+qr4.R
+qr5.R
+qr6.R
+support.R
 plots/
 README.md
 Source_Classification_Code.rds # not provided
